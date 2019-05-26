@@ -5,8 +5,8 @@ class Anagram
     @word = word
   end
   
-  def match
-    @word.split("").sort.match
+  def detect
+    @word.split("").sort.
     
   end
   
