@@ -10,6 +10,7 @@ class Anagram
     %w(list).each do |word_a|
       if word_a.split("").sort == @word.split("").sort
         anagrams << word_a
+        anagrams
       else
         anagrams
       end
