@@ -5,10 +5,12 @@ class Anagram
     @word = word
   end
   
-  def match
-    if @word.split("").sort
-    
+  def match(list)
+    anagrams = []
+    %w(list).each do |word_a|
+    if word_a.split("").sort == @word.split("").sort
+      anagrams << word_a
+    end
+    anagrams
   end
-  
-  
 end
