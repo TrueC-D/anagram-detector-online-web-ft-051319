@@ -10,5 +10,6 @@ class Anagram
     (list).each do |word_a|
       (@word.split("").sort == word_a.split("").sort)? anagrams << word_a : anagrams
     end
+    anagrams
   end
 end
